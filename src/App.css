@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+
+.Root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  font-family: 'Overpass', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Tree {
+    display: flex;
+    height: 500px;
+    width : 630px; 
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 7%;
+    justify-content: center;
+}
+.Branch{
+  margin-top: 2rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  width: auto;
+  height: auto;
+  display: flex;
+flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Img{
+border-radius: 50%;
+background-color: hsla(215, 13%, 29%, 0.774);
+height: 60px;
+width: 60px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 1rem;
+margin-bottom: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Box{
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.How{
+  color: hsl(0, 0%, 100%);
+  height: auto;
+}
+.Please{
+  margin-top: -2rem;
+  color: hsla(216, 9%, 66%, 0.829);
+  height: auto;
+}
+
+.Number{
+  margin-top: 1rem;
+  display: flex;
+}
+.Number div{
+  border-radius: 50%;
+  background-color: hsla(215, 13%, 29%, 0.774);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-right: 3rem;
+  height: 60px;
+  width: 60px;
+  color: hsla(216, 9%, 66%, 0.829)
 }
-
-.App-link {
-  color: #61dafb;
+.Before{
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.End{
+  margin-top: 1rem;
+  background-color: hsl(25, 97%, 53%); 
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 50px; 
+color: hsl(0, 0%, 100%);
+}
+.End h3{
+  margin-left : 0.15rem;
 }
